@@ -8,9 +8,8 @@ cask "mp3tag" do
   homepage "https://mp3tag.app/"
 
   livecheck do
-    url "https://mp3tag.app/get/"
-    strategy :page_match
-    regex(%r{href=.*?/Mp3tag-(\d+(?:\.\d+)*)\.zip}i)
+    url "https://updates.mp3tag.app/appcast.xml"
+    strategy :sparkle, &:short_version
   end
 
   auto_updates true
