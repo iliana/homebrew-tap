@@ -7,7 +7,7 @@ class Kijetesantakaluotokieni < Formula
   sha256 "adf46be7b001c78b3e8ece243dc84f77d86261ce4d00460bc1cbc958adc39063"
 
   livecheck do
-    url "https://crates.io/api/v1/crates/kijetesantakalu/versions"
+    url "https://crates.io/api/v1/crates/kijetesantakaluotokieni/versions"
     regex(/"num":\s*"(\d+(?:\.\d+)+)"/i)
   end
 
