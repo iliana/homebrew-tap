@@ -11,6 +11,12 @@ class Kijetesantakaluotokieni < Formula
     regex(/"num":\s*"(\d+(?:\.\d+)+)"/i)
   end
 
+  bottle do
+    root_url "https://ghcr.io/v2/iliana/tap"
+    sha256 cellar: :any_skip_relocation, big_sur:      "45ca89cbcdc5ae0e8b0fdd14d02ef0bff8087abd6784d7efef61e8635c801d0d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "962e79a9a20c9d1f8ec6de58f8ee5f689057214619a743a3fb75dae95622f271"
+  end
+
   depends_on "rust" => :build
 
   def install
