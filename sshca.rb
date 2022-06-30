@@ -6,12 +6,6 @@ class Sshca < Formula
   license "WTFPL"
   head "https://github.com/iliana/sshca.git", branch: "main"
 
-  bottle do
-    root_url "https://ghcr.io/v2/iliana/tap"
-    sha256 cellar: :any_skip_relocation, big_sur:      "8b817fbb59f239a41f6dab93137a76fc37d6119eab3ed97502555569beaa17b6"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "a0a44d9bc01f107e7943dab00f976abae33762ae46f9733f9cff7a9e748921a0"
-  end
-
   depends_on "rust" => :build
 
   def install
