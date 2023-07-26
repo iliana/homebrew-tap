@@ -1,8 +1,8 @@
 class Sshca < Formula
   desc "Bad SSH certificate authority"
   homepage "https://github.com/iliana/sshca"
-  url "https://github.com/iliana/sshca/archive/v0.2.0.tar.gz"
-  sha256 "869ceaf7573224d09eb3f8a2c3b4ce53a467b2eeeeef77a447f882051b9ca281"
+  url "https://github.com/iliana/sshca/archive/v0.2.1.tar.gz"
+  sha256 "81122abc0386a5c411c9a0e0aa6561a6c0fba26924e349b0f69b406ce635139f"
   license "WTFPL"
   head "https://github.com/iliana/sshca.git", branch: "main"
 
